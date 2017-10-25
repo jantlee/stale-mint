@@ -1,5 +1,4 @@
 * {
-    /*border: 1px dotted black;*/
     padding: 0;
     margin: 0;
 }
@@ -7,30 +6,34 @@
 body {
     background-color: #edeef2;
     margin: 0;
+    color: #666;
     font-family: Helvetica;
 }
 
 button {
-	background-color: blue;
-	color: #aabbcc;
+	background-color: #0077c5;
+	color: white;
 	border-radius: 5px;
+	font-size: 14px;
+	height: 35px;
+	border: none;
 }
 
 /* HEADER */
 
 header {
     float: right;
-    /*width: 100%;*/
     display: inline;
     margin: .5% 2%;
     position: relative;
-    top: -90px;
+    top: -20px;
 }
 
 header button {
     float: right;
-    height: 30px;
-    width: 90px;
+    width: 100px;
+    position: relative;
+    top: -5px;
 }
 
 #header-text {
@@ -39,20 +42,37 @@ header button {
     padding: 0 8px;
 }
 
+#header-text a, a:hover {
+	text-decoration: none;
+	color: #0077c5;
+}
 
 /* CONTENT DIV */
 
-#content {
+#content, #content-heading {
     width: 25%;
-    margin: 7% auto;
-    text-align: center;
+    margin: 6% auto 2.5% auto;
+    /*text-align: center;*/
     background-color: white;
-    border: 1px solid grey;
+    border: 1px solid #ccc;
+    padding: 0 1%;
+}
+
+#content-heading {
+	border: none;
+	margin: 2% auto;
+    background-color: #edeef2;
+	position: relative;
+	top: 80px;
+	z-index: -1;
 }
 
 #main-heading, #form-heading, #form-footer {
-	max-width: 100%;
+	max-width: 95%;
+	margin: 0 auto;
+	text-align: center;
 	padding: 2% auto;
+	display: block;
 }
 
 /* FORM */
@@ -63,30 +83,28 @@ form * {
 
 form p {
 	text-align: left;
-	padding: 3% 7%;
-	font-size: 16px;
+	padding: 9% 7% 3% 7%;
+	font-size: 14px;
 }
 
-#caption {
-	padding: 1% 7%;
+legend {
+	padding: 1% 0;
+	font-size: 11px;
+	text-align: left;
+	position: relative;
+	left: -32px;
 }
 
 form input {
 	width: 85%;
 	line-height: 30px;
 	border-radius: 3px;
-	/*border: none;*/
-}
-
-#caption {
-	font-size: 12px;
 }
 
 form button {
 	width: 310px;
-	height: 40px;
+	height: 45px;
 	margin: 8% auto;
-	/*background-color: #aabbcc;*/
 }
 
 /* FOOTER */
