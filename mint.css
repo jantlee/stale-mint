@@ -1,12 +1,19 @@
 * {
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: #ddeeef;
+    background-color: #edeef2;
     margin: 0;
+    font-family: Helvetica;
+}
+
+button {
+	background-color: blue;
+	color: #aabbcc;
+	border-radius: 5px;
 }
 
 /* HEADER */
@@ -16,6 +23,8 @@ header {
     /*width: 100%;*/
     display: inline;
     margin: .5% 2%;
+    position: relative;
+    top: -90px;
 }
 
 header button {
@@ -27,6 +36,7 @@ header button {
 #header-text {
     float: left;
     font-size: 12px;
+    padding: 0 8px;
 }
 
 
@@ -36,10 +46,13 @@ header button {
     width: 25%;
     margin: 7% auto;
     text-align: center;
+    background-color: white;
+    border: 1px solid grey;
 }
 
 #main-heading, #form-heading, #form-footer {
 	max-width: 100%;
+	padding: 2% auto;
 }
 
 /* FORM */
@@ -48,6 +61,33 @@ form * {
 	display: block;
 }
 
+form p {
+	text-align: left;
+	padding: 3% 7%;
+	font-size: 16px;
+}
+
+#caption {
+	padding: 1% 7%;
+}
+
+form input {
+	width: 85%;
+	line-height: 30px;
+	border-radius: 3px;
+	/*border: none;*/
+}
+
+#caption {
+	font-size: 12px;
+}
+
+form button {
+	width: 310px;
+	height: 40px;
+	margin: 8% auto;
+	/*background-color: #aabbcc;*/
+}
 
 /* FOOTER */
 
