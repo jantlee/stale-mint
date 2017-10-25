@@ -1,3 +1,63 @@
-body {
-	background-color: #ddeeef;
+* {
+    border: 1px dotted black;
+    padding: 0;
+    margin: 0;
 }
+
+body {
+    background-color: #ddeeef;
+    margin: 0;
+}
+
+/* HEADER */
+
+header {
+    float: right;
+    /*width: 100%;*/
+    display: inline;
+    margin: .5% 2%;
+}
+
+header button {
+    float: right;
+    height: 30px;
+    width: 90px;
+}
+
+#header-text {
+    float: left;
+    font-size: 12px;
+}
+
+
+/* CONTENT DIV */
+
+#content {
+    width: 25%;
+    margin: 7% auto;
+    text-align: center;
+}
+
+#main-heading, #form-heading, #form-footer {
+	max-width: 100%;
+}
+
+/* FORM */
+form * {
+	margin: 0 auto;
+	display: block;
+}
+
+
+/* FOOTER */
+
+footer {
+	margin: 0 auto;
+	width: 50%;
+}
+
+#main-footer {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
